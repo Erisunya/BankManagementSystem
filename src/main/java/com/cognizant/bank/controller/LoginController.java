@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import com.cognizant.bank.models.UserRequest;
 
 @RestController
-public class BankController {
+public class LoginController {
 	
 	@PostMapping("/signup")
 	public ResponseEntity<?> signup(@RequestBody UserRequest userRequest) {
