@@ -28,7 +28,8 @@ public class Loan {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
 	private int id;
-	@OneToOne(mappedBy="loan")
+	@ManyToOne
+	@JoinColumn(name="username")
 	private User user;
 	private String loanType;
 	private long loanAmount;

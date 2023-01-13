@@ -37,8 +37,7 @@ public class User {
 	private long contactNo;
 	private Date dob;
 	private String accountType;
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="loan_id", referencedColumnName="id")
-	private Loan loan;
+	@OneToMany(mappedBy="user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	private List<Loan> loans;
 	
 }

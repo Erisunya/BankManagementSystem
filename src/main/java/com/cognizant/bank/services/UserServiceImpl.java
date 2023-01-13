@@ -3,12 +3,10 @@ package com.cognizant.bank.services;
 import java.util.Optional;
 
 import com.cognizant.bank.entities.Loan;
-import com.cognizant.bank.entities.Token;
 import com.cognizant.bank.entities.User;
 import com.cognizant.bank.exceptions.LoanNotFoundException;
 import com.cognizant.bank.exceptions.UsernameNotFoundException;
 import com.cognizant.bank.models.UserRequest;
-import com.cognizant.bank.repositories.TokenRepository;
 import com.cognizant.bank.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +17,6 @@ public class UserServiceImpl implements UserService{
 	
 	@Autowired
 	private UserRepository userRepository;
-	@Autowired
-	private TokenRepository tokenRepository;
 	
 	@Override
 	public void updateUser(UserRequest userRequest) throws UsernameNotFoundException {

@@ -5,7 +5,6 @@ import java.security.Key;
 
 import javax.crypto.spec.SecretKeySpec;
 
-import com.cognizant.bank.repositories.TokenRepository;
 import com.cognizant.bank.services.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
