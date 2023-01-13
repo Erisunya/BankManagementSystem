@@ -35,10 +35,4 @@ public class LoanController {
 		
 		return new ResponseEntity<String>("Loan successfully applied.", HttpStatus.OK);
 	}	
-	
-	@GetMapping("/test")
-	public ResponseEntity<?> test() {
-		
-		return new ResponseEntity<String>("test", HttpStatus.OK);
-	}
 }
